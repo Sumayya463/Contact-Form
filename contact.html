@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit"  method="POST">
+        <input type="hidden" name="access_key" value="d56bbeb0-c1cd-49c7-a445-73e09c5b66a6">
+        <div id="names">
+            <div id="first">
+                <label htmlFor="firstname">First Name*</label>
+                 <input type="text" name="firstname" id="firstname"  required/>
+            </div>
+            <div id="last">
+                <label htmlFor="lastname">Last Name*</label>
+                 <input type="text" name="lastname" id="lastname" required/>
+            </div>
+        </div>
+        <div id="email">
+            <label htmlFor="emailid">Email Address*</label>
+            <input type="email" name="emailid" id="emailid" required/>
+        </div>
+        <p style="margin-left: 20px; margin-top: 20px; font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Query Type *</p>
+        <div id="query">
+            
+            <div id="type1">
+                <input type="checkbox"><span style="margin-left: -10px; margin-top: 10px;">General Enquiry</span></input>
+                
+            
+            </div>
+            <div id="type2">
+                <input type="checkbox"><span style="margin-left: -10px; margin-top: 10px;">Support Request</span></input>
+            </div>
+            
+        </div>
+        <div id="message">
+            <label htmlFor="messagetext">Message*</label>
+            <textarea name="messagetext" id="messagetext"  required></textarea>
+        </div>
+        <div id="consent">
+           <input type="checkbox" name="consentText" id="consentText" required/>
+           <label htmlFor="consentText">I consent to being contacted by the team*</label>
+        </div>
+        <div id="submit">
+            <button type="submit" id="submitted" >Submit</button>
+        </div>
+    </form>
+    </div>
+   
+</body>
+<script src="./contact.js"></script>
+</html>
